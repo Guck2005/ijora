@@ -7,6 +7,13 @@ Projet dans le cadre d’un **TP Big Data / Machine Learning** (RecoSaaS, CDC v2
 
 - GitHub : [https://github.com/Guck2005/ijora.git](https://github.com/Guck2005/ijora.git)
 
+Après le premier commit local :
+
+```bash
+git remote add origin https://github.com/Guck2005/ijora.git
+git push -u origin main
+```
+
 ## Prérequis
 
 - Python **3.10+**
@@ -37,6 +44,8 @@ pytest
 ```
 
 ## Architecture (Sprint 0)
+
+La structure suit le planning (`core/`, `ui/`, `tests/`, `data/sample/`) avec **`app.py` à la racine** du dépôt pour satisfaire la commande `streamlit run app.py` (équivalent fonctionnel du dossier `recosaas/` décrit dans `Sprints_Planning.md`).
 
 - **`core/`** : logique métier pure — **aucun** `import streamlit`.
 - **`ui/`** : thème, i18n, pages et composants Streamlit.
