@@ -1,0 +1,101 @@
+reader_id,book_id,rating,rated_at,title,author,genre,publisher,publication_year,format
+25,B005,2.0,2024-02-03,Harry Potter à l'école des sorciers,J.K. Rowling,SF,Gallimard,1997,Broché
+6,B038,5.0,2025-06-24,La Société du spectacle,Guy Debord,Essai,Gallimard,1967,Relié
+25,B033,3.0,2023-01-11,Le Deuxième Sexe,Simone de Beauvoir,Essai,Gallimard,1949,Broché
+1,B022,4.0,2025-09-09,Madame Bovary,Gustave Flaubert,Roman,Flammarion,1857,Broché
+24,B022,3.0,2024-08-17,Madame Bovary,Gustave Flaubert,Roman,Le Livre de Poche,1857,Broché
+24,B043,2.0,2023-06-03,Factfulness,Hans Rosling,Essai,Le Masque,2018,Poche
+24,B005,4.0,2023-11-28,Harry Potter à l'école des sorciers,J.K. Rowling,Poésie,Gallimard,1997,Poche
+20,B035,5.0,2024-08-30,Mrs Dalloway,Virginia Woolf,Roman,10/18,1925,Poche
+15,B010,2.0,2023-12-12,L'Art de la guerre,Sun Tzu,Essai,Le Livre de Poche,-500,Poche
+22,B005,4.0,2023-04-29,Harry Potter à l'école des sorciers,J.K. Rowling,Jeunesse,Gallimard,1997,Poche
+9,B026,2.0,2024-12-30,Macbeth,William Shakespeare,Roman,Bragelonne,1606,Poche
+24,B048,4.0,2025-01-06,Deep Learning,Goodfellow et al.,Polar,Pearson,2016,Broché
+17,B037,4.0,2023-05-11,L'Étrange Défaite,Marc Bloch,Roman,Gallimard,1946,Numérique
+14,B038,3.0,2023-11-05,La Société du spectacle,Guy Debord,Essai,Bragelonne,1967,Relié
+16,B036,4.0,2023-09-25,La Condition humaine,André Malraux,Roman,Gallimard,1933,Broché
+18,B039,2.0,2024-12-23,Surveiller et punir,Michel Foucault,Biographie,Gallimard,1975,Numérique
+2,B026,1.0,2025-03-11,Macbeth,William Shakespeare,Roman,Albin Michel,1606,Poche
+5,B007,1.0,2025-03-07,Fondation,Isaac Asimov,SF,Denöel,1951,Broché
+8,B042,3.0,2025-10-25,Homo Deus,Yuval Noah Harari,Essai,Albin Michel,2015,Broché
+4,B023,5.0,2025-04-22,Les Fleurs du mal,Charles Baudelaire,SF,Actes Sud,1857,Broché
+14,B025,1.0,2023-12-18,Hamlet,William Shakespeare,Roman,Gallimard,1603,Relié
+21,B019,3.0,2023-04-29,Les Hauts de Hurlevent,Emily Brontë,Poésie,Points,1847,Broché
+20,B009,4.0,2024-11-04,Le Nom de la rose,Umberto Eco,Polar,Actes Sud,1980,Poche
+15,B046,2.0,2025-09-30,Design Patterns,GoF,Essai,Le Livre de Poche,1994,Poche
+26,B039,4.0,2025-12-04,Surveiller et punir,Michel Foucault,Essai,Bragelonne,1975,Numérique
+17,B032,2.0,2023-09-10,Critique de la raison pure,Emmanuel Kant,Essai,Albin Michel,1781,Poche
+3,B020,5.0,2023-09-17,Jane Eyre,Charlotte Brontë,Roman,Le Livre de Poche,1847,Poche
+23,B041,3.0,2023-02-11,Sapiens,Yuval Noah Harari,Essai,Albin Michel,2011,Poche
+18,B027,3.0,2023-06-04,Le Rouge et le Noir,Stendhal,Essai,Le Livre de Poche,1830,Broché
+20,B022,1.0,2024-08-31,Madame Bovary,Gustave Flaubert,Polar,Flammarion,1857,Broché
+17,B023,3.0,2024-08-22,Les Fleurs du mal,Charles Baudelaire,Fantasy,Gallimard,1857,Poche
+17,B012,5.0,2024-02-11,Anna Karénine,Léon Tolstoï,Fantasy,Gallimard,1877,Broché
+3,B005,1.0,2023-12-06,Harry Potter à l'école des sorciers,J.K. Rowling,Fantasy,Gallimard,1997,Broché
+17,B028,4.0,2025-06-28,La Chartreuse de Parme,Stendhal,Roman,Gallimard,1839,Broché
+24,B044,3.0,2024-05-19,"Thinking, Fast and Slow",Daniel Kahneman,SF,Flammarion,2011,Numérique
+10,B004,4.0,2025-06-04,Le Petit Prince,Antoine de Saint-Exupéry,Jeunesse,Albin Michel,1943,Relié
+19,B043,4.0,2025-11-21,Factfulness,Hans Rosling,Essai,Bragelonne,2018,Poche
+1,B041,3.0,2023-12-14,Sapiens,Yuval Noah Harari,Essai,Albin Michel,2011,Relié
+11,B014,2.0,2023-08-11,Cent ans de solitude,Gabriel García Márquez,Jeunesse,Le Livre de Poche,1967,Broché
+14,B031,4.0,2025-11-10,Discours de la méthode,René Descartes,Essai,Flammarion,1637,Relié
+30,B009,1.0,2024-11-26,Le Nom de la rose,Umberto Eco,Polar,Grasset,1980,Broché
+7,B038,3.0,2023-11-15,La Société du spectacle,Guy Debord,Essai,Gallimard,1967,Numérique
+9,B035,1.0,2024-11-12,Mrs Dalloway,Virginia Woolf,Roman,10/18,1925,Broché
+13,B018,4.0,2024-07-18,Beloved,Toni Morrison,Poésie,Christian Bourgois,1987,Relié
+30,B004,4.0,2025-09-19,Le Petit Prince,Antoine de Saint-Exupéry,Jeunesse,Actes Sud,1943,Numérique
+26,B048,1.0,2023-10-08,Deep Learning,Goodfellow et al.,Essai,Pearson,2016,Poche
+2,B022,4.0,2025-12-22,Madame Bovary,Gustave Flaubert,Roman,Points,1857,Relié
+8,B044,3.0,2025-10-22,"Thinking, Fast and Slow",Daniel Kahneman,Jeunesse,Points,2011,Poche
+25,B034,4.0,2023-07-18,Une chambre à soi,Virginia Woolf,Poésie,10/18,1929,Numérique
+2,B039,1.0,2023-06-30,Surveiller et punir,Michel Foucault,Essai,Gallimard,1975,Relié
+26,B038,1.0,2024-08-07,La Société du spectacle,Guy Debord,Essai,Gallimard,1967,Poche
+9,B010,3.0,2023-02-19,L'Art de la guerre,Sun Tzu,Essai,Payot,-500,Numérique
+28,B018,1.0,2023-11-24,Beloved,Toni Morrison,Roman,Flammarion,1987,Poche
+9,B023,2.0,2024-04-21,Les Fleurs du mal,Charles Baudelaire,Poésie,Gallimard,1857,Relié
+14,B025,4.0,2025-11-28,Hamlet,William Shakespeare,Roman,Gallimard,1603,Broché
+20,B003,1.0,2025-12-23,L'Étranger,Albert Camus,Polar,Actes Sud,1942,Broché
+4,B027,4.0,2023-06-16,Le Rouge et le Noir,Stendhal,Roman,Bragelonne,1830,Numérique
+17,B008,1.0,2025-09-04,Dune,Frank Herbert,SF,Bragelonne,1965,Poche
+16,B037,1.0,2023-04-10,L'Étrange Défaite,Marc Bloch,Essai,Gallimard,1946,Relié
+24,B034,3.0,2025-03-31,Une chambre à soi,Virginia Woolf,Essai,Le Livre de Poche,1929,Relié
+30,B046,4.0,2025-07-15,Design Patterns,GoF,Essai,Le Masque,1994,Poche
+20,B037,1.0,2025-09-03,L'Étrange Défaite,Marc Bloch,Essai,Gallimard,1946,Poche
+13,B018,2.0,2023-09-02,Beloved,Toni Morrison,Roman,Albin Michel,1987,Poche
+13,B048,5.0,2025-09-06,Deep Learning,Goodfellow et al.,Essai,Pearson,2016,Relié
+13,B021,5.0,2023-05-08,Germinal,Émile Zola,Essai,Flammarion,1885,Poche
+25,B016,3.0,2024-07-22,Kafka sur le rivage,Haruki Murakami,Roman,10/18,2002,Relié
+10,B045,3.0,2024-05-29,Clean Code,Robert C. Martin,Essai,Pearson,2008,Numérique
+6,B019,2.0,2023-12-13,Les Hauts de Hurlevent,Emily Brontë,Roman,Le Livre de Poche,1847,Broché
+11,B004,4.0,2023-01-25,Le Petit Prince,Antoine de Saint-Exupéry,Jeunesse,Gallimard,1943,Broché
+1,B024,3.0,2025-04-26,Paradis perdu,John Milton,Poésie,Le Livre de Poche,1667,Relié
+4,B039,2.0,2024-01-03,Surveiller et punir,Michel Foucault,Essai,Gallimard,1975,Poche
+3,B010,1.0,2024-12-26,L'Art de la guerre,Sun Tzu,Essai,Payot,-500,Poche
+24,B023,1.0,2024-03-25,Les Fleurs du mal,Charles Baudelaire,Poésie,Gallimard,1857,Relié
+22,B007,5.0,2024-02-14,Fondation,Isaac Asimov,SF,Flammarion,1951,Numérique
+21,B034,3.0,2025-08-29,Une chambre à soi,Virginia Woolf,Essai,Bragelonne,1929,Relié
+14,B024,3.0,2023-04-14,Paradis perdu,John Milton,Poésie,Gallimard,1667,Broché
+22,B017,3.0,2025-03-18,Ne tirez pas sur l'oiseau moqueur,Harper Lee,Roman,Points,1960,Broché
+5,B012,4.0,2025-03-29,Anna Karénine,Léon Tolstoï,Roman,Flammarion,1877,Numérique
+28,B028,1.0,2024-02-21,La Chartreuse de Parme,Stendhal,Roman,Gallimard,1839,Broché
+16,B033,1.0,2023-10-15,Le Deuxième Sexe,Simone de Beauvoir,Jeunesse,Gallimard,1949,Numérique
+29,B047,2.0,2023-01-06,Introduction aux algorithmes,Cormen et al.,Essai,Dunod,2009,Relié
+5,B022,3.0,2025-10-23,Madame Bovary,Gustave Flaubert,Biographie,Flammarion,1857,Broché
+15,B008,4.0,2025-11-04,Dune,Frank Herbert,Roman,Points,1965,Relié
+21,B041,3.0,2023-09-22,Sapiens,Yuval Noah Harari,Essai,Albin Michel,2011,Poche
+15,B031,3.0,2023-02-04,Discours de la méthode,René Descartes,Poésie,Flammarion,1637,Relié
+14,B035,5.0,2023-05-15,Mrs Dalloway,Virginia Woolf,Biographie,10/18,1925,Numérique
+5,B005,1.0,2023-03-16,Harry Potter à l'école des sorciers,J.K. Rowling,Biographie,Le Masque,1997,Poche
+12,B016,3.0,2025-06-29,Kafka sur le rivage,Haruki Murakami,Roman,Actes Sud,2002,Relié
+8,B038,3.0,2025-09-04,La Société du spectacle,Guy Debord,Essai,Gallimard,1967,Poche
+10,B041,3.0,2023-06-17,Sapiens,Yuval Noah Harari,Essai,Albin Michel,2011,Numérique
+21,B022,5.0,2025-03-29,Madame Bovary,Gustave Flaubert,Jeunesse,Flammarion,1857,Relié
+19,B040,2.0,2023-07-16,Le Capital au XXIe siècle,Thomas Piketty,Essai,Seuil,2013,Broché
+19,B042,5.0,2024-02-07,Homo Deus,Yuval Noah Harari,Essai,Albin Michel,2015,Relié
+11,B019,2.0,2024-10-18,Les Hauts de Hurlevent,Emily Brontë,Roman,Albin Michel,1847,Numérique
+29,B045,3.0,2025-02-28,Clean Code,Robert C. Martin,Essai,Actes Sud,2008,Broché
+3,B015,3.0,2025-08-16,Le Vieux et la Mer,Ernest Hemingway,Roman,Gallimard,1952,Numérique
+11,B012,5.0,2023-02-19,Anna Karénine,Léon Tolstoï,Roman,Albin Michel,1877,Poche
+4,B034,3.0,2023-08-04,Une chambre à soi,Virginia Woolf,Essai,Albin Michel,1929,Poche
+11,B032,2.0,2023-11-04,Critique de la raison pure,Emmanuel Kant,Essai,Vrin,1781,Relié
+29,B007,1.0,2023-12-07,Fondation,Isaac Asimov,SF,Le Livre de Poche,1951,Numérique

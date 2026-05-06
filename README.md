@@ -34,25 +34,35 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-La page d’accueil affiche **Hello RecoSaaS** (squelette Sprint 0).
+La première page (**Accueil & importation**) présente le projet et l’import des données ; puis mapping → recommandation / dashboard.
 
-## Tests & qualité
+## Export des résultats
+
+Sur la page **Recommandation**, après un calcul de top-N, un bouton **Télécharger les recommandations (CSV)** génère un fichier en mémoire (aucune écriture disque côté serveur).
+
+## Tests & qualité (en local)
+
+Pas de pipeline CI imposé pour le TP ; en local :
 
 ```bash
 python -m ruff check .
 pytest
 ```
 
-## Architecture (Sprint 0)
+## Architecture
 
-La structure suit le planning (`core/`, `ui/`, `tests/`, `data/sample/`) avec **`app.py` à la racine** du dépôt pour satisfaire la commande `streamlit run app.py` (équivalent fonctionnel du dossier `recosaas/` décrit dans `Sprints_Planning.md`).
+La structure suit le planning (`core/`, `ui/`, `tests/`, `data/sample/`) avec **`app.py` à la racine** du dépôt pour `streamlit run app.py`.
 
 - **`core/`** : logique métier pure — **aucun** `import streamlit`.
-- **`ui/`** : thème, i18n, pages et composants Streamlit.
+- **`ui/`** : thème, pages Streamlit.
 - **`tests/`** : `pytest` ciblant principalement `core/`.
-- **`data/sample/`** : échantillons (ex. extrait type MovieLens pour les sprints suivants).
+- **`data/sample/`** : exemple CSV livres (`books_sample.csv`, 100 lignes × 10 colonnes).
 
-Les détails des sprints sont dans [`Sprints_Planning.md`](Sprints_Planning.md) (Sprint 0 → initialisation ; Sprint 1+ ingestion, mapping, EDA, similarité, etc.).
+Interface en **français** uniquement. Algorithme item–item **from scratch** (`core/similarity.py`, etc.) — voir `requirements.txt` pour l’interdiction de scikit-learn / surprise sur la partie reco.
+
+## Déploiement (bonus note)
+
+Pousser le dépôt sur **GitHub** et connecter le repo à **Streamlit Community Cloud** pour obtenir une **URL publique** ; indiquez ce lien en tête du README ou du rapport de TP.
 
 ## Contraintes projet
 
