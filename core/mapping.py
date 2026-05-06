@@ -1,12 +1,8 @@
-"""Détection de colonnes et normalisation des notes (Sprint 2)."""
+"""Détection de colonnes (Sprint 2)."""
 
 from __future__ import annotations
 
 import re
-from typing import Literal
-
-import numpy as np
-import pandas as pd
 
 USER_PATTERN = re.compile(
     r"user|client|customer|utilisateur|acheteur|uid|matricule|employe|employee",
@@ -48,29 +44,3 @@ def suggest_mapping(columns: list[str]) -> dict[str, str | None]:
         if out[role] is None and rest:
             out[role] = rest.pop(0)
     return out
-
-
-def normalize_ratings(series: pd.Series, scale: Literal["0-1", "1-5"]) -> pd.Series:
-    """
-    Min-max sur les valeurs numériques finies ; ``scale`` cible [0,1] ou [1,5].
-    Implémentation NumPy uniquement sur le vecteur numérique.
-    """
-    if scale not in ("0-1", "1-5"):
-        raise ValueError('scale doit être "0-1" ou "1-5"')
-    x = pd.to_numeric(series, errors="coerce").to_numpy(dtype=np.float64, copy=True)
-    finite = np.isfinite(x)
-    if not finite.any():
-        return pd.Series(x, index=series.index, dtype="float64")
-    xmin = float(np.nanmin(x))
-    xmax = float(np.nanmax(x))
-    out = np.full_like(x, np.nan, dtype=np.float64)
-    if xmax <= xmin:
-        fill = 0.5 if scale == "0-1" else 3.0
-        out[finite] = fill
-    else:
-        t = (x[finite] - xmin) / (xmax - xmin)
-        if scale == "0-1":
-            out[finite] = t
-        else:
-            out[finite] = 1.0 + t * 4.0
-    return pd.Series(out, index=series.index, dtype="float64")

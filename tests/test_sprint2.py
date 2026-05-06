@@ -1,4 +1,4 @@
-"""Tests Sprint 2 — mapping, validation des notes, rapport qualité, normalisation."""
+"""Tests Sprint 2 — mapping, validation des notes, rapport qualité."""
 
 from __future__ import annotations
 
@@ -9,7 +9,7 @@ import pandas as pd
 import pytest
 
 from core.ingestion import load_csv, standardize
-from core.mapping import normalize_ratings, suggest_mapping
+from core.mapping import suggest_mapping
 from core.validation import quality_report, validate_rating_column
 
 
@@ -69,22 +69,6 @@ def test_quality_report_missing_key() -> None:
         quality_report(pd.DataFrame({"a": [1]}))
 
 
-def test_normalize_0_1_and_1_5() -> None:
-    s = pd.Series([10.0, 20.0, 30.0])
-    n0 = normalize_ratings(s, "0-1")
-    assert n0.min() == pytest.approx(0.0)
-    assert n0.max() == pytest.approx(1.0)
-    n1 = normalize_ratings(s, "1-5")
-    assert n1.min() == pytest.approx(1.0)
-    assert n1.max() == pytest.approx(5.0)
-
-
-def test_normalize_constant_series() -> None:
-    s = pd.Series([7.0, 7.0, 7.0])
-    n = normalize_ratings(s, "1-5")
-    assert (n == 3.0).all()
-
-
 def test_quality_report_books_sample_under_one_second() -> None:
     p = Path(__file__).resolve().parents[1] / "data" / "sample" / "books_sample.csv"
     if not p.is_file():
@@ -97,6 +81,3 @@ def test_quality_report_books_sample_under_one_second() -> None:
     assert elapsed < 1.0, f"quality_report trop lent: {elapsed:.2f}s"
 
 
-def test_normalize_invalid_scale() -> None:
-    with pytest.raises(ValueError):
-        normalize_ratings(pd.Series([1, 2]), "bad")  # type: ignore[arg-type]

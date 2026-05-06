@@ -73,29 +73,5 @@ La matrice est calculée lorsque vous cliquez sur **Obtenir les recommandations*
             """
         )
 
-    st.divider()
-    st.subheader("État de la session")
-
-    sim = st.session_state.get("sim_matrix")
-    shape = st.session_state.get("sim_pivot_shape")
-    active = st.session_state.get("sim_metric")
-
-    if sim is not None and shape is not None:
-        if active == "pearson":
-            ml = "Pearson"
-        elif active == "cosine":
-            ml = "Cosinus"
-        else:
-            ml = str(active)
-        st.success(
-            f"Dernier calcul : **{active}** ({ml}) — pivot : "
-            f"**{shape[0]} × {shape[1]}** (items × utilisateurs)."
-        )
-    else:
-        st.info(
-            "Aucune matrice encore calculée dans cette session. Sur **Recommandation**, "
-            f"cliquez sur **Obtenir les recommandations** (métrique actuelle : **{metric_key}**)."
-        )
-
 
 render()

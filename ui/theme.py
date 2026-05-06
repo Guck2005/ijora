@@ -181,13 +181,26 @@ def inject_global_styles() -> None:
         [data-testid="stSidebar"] [data-testid="stSidebarContent"] {{
             padding-top: 0.75rem !important;
         }}
+        /* st.navigation : espacement entre les entrées (liste ul > li). */
+        [data-testid="stSidebar"] ul[data-testid="stSidebarNavItems"] {{
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 1.25rem !important;
+        }}
+        [data-testid="stSidebar"] ul[data-testid="stSidebarNavItems"] > li {{
+            margin: 0 !important;
+        }}
         /* Menu multipage (st.navigation) : plus d’air entre les lignes et dans chaque lien. */
         [data-testid="stSidebar"] div[data-testid="stPageLink"] {{
             margin-bottom: 0.65rem !important;
         }}
-        [data-testid="stSidebar"] a[data-testid="stPageLink-NavLink"] {{
-            padding: 0.8rem 1.05rem !important;
+        [data-testid="stSidebar"] a[data-testid="stPageLink-NavLink"],
+        [data-testid="stSidebar"] a[data-testid="stSidebarNavLink"] {{
+            padding: 0.95rem 1.15rem !important;
             margin-top: 0 !important;
+            margin-bottom: 0 !important;
+        }}
+        .st-emotion-cache-10p9htt.eelgd2m4 {{
             margin-bottom: 0 !important;
         }}
         /* Cartes étapes (page import) : même hauteur, fond vert charte. */
@@ -205,7 +218,6 @@ def inject_global_styles() -> None:
         div.ijora-import-step {{
             box-sizing: border-box;
             background-color: {_GREEN_SURFACE} !important;
-            border-left: 4px solid {_GREEN_ACCENT} !important;
             border-radius: 0.5rem;
             padding: 1rem 1rem 1.25rem 1rem;
             color: {_GREEN_MUTED} !important;

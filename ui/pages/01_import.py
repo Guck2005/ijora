@@ -12,7 +12,7 @@ import streamlit as st
 
 from core.eda import compute_dataset_signature
 from core.ingestion import STANDARD_COLUMNS, build_manual_dataframe, load_csv, standardize
-from core.mapping import normalize_ratings, suggest_mapping
+from core.mapping import suggest_mapping
 from core.validation import validate_file_size, validate_rating_column
 
 _PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -161,21 +161,7 @@ def _render_mapping_section() -> None:
         if bad_idx:
             st.dataframe(mapped.iloc[bad_idx], use_container_width=True)
 
-    st.subheader("Normalisation des notes")
-    norm_on = st.toggle("Normaliser les ratings", key="toggle_norm_ratings")
-    if norm_on:
-        st.radio(
-            "Échelle cible",
-            ["0-1", "1-5"],
-            horizontal=True,
-            format_func=lambda x: "0 → 1" if x == "0-1" else "1 → 5",
-            key="radio_norm_scale",
-        )
-    else:
-        _ = st.session_state.get("radio_norm_scale", "0-1")
-
     ratings_ok = bool(vr["ok"])
-    scale_choice = st.session_state.get("radio_norm_scale", "0-1")
 
     if st.button(
         "Valider le mapping et enregistrer clean_df",
@@ -184,8 +170,6 @@ def _render_mapping_section() -> None:
         key="btn_save_clean_df",
     ):
         out = mapped.copy()
-        if norm_on:
-            out["rating"] = normalize_ratings(out["rating"], scale=scale_choice)
         st.session_state["raw_df"] = mapped.reset_index(drop=True)
         st.session_state["clean_df"] = out.reset_index(drop=True)
         st.session_state["dataset_sig"] = compute_dataset_signature(st.session_state["clean_df"])
@@ -199,8 +183,7 @@ def render() -> None:
 
     st.title("RecoSaaS — Ijora")
     st.markdown(
-        "Plateforme de recommandation par **filtrage collaboratif item–item** "
-        "(pandas / numpy, **sans scikit-learn** pour la similarité)."
+        "Plateforme de recommandation par **filtrage collaboratif item–item**."
     )
     st.markdown(
         """
@@ -209,7 +192,7 @@ def render() -> None:
                 1. <strong>Importation</strong> (ci-dessous) — CSV ou saisie manuelle.
             </div>
             <div class="ijora-import-step">
-                2. <strong>Mapping &amp; normalisation</strong> sur cette page après import.
+                2. <strong>Mapping des colonnes</strong> sur cette page après import.
             </div>
             <div class="ijora-import-step">
                 3. <strong>Recommandation</strong> — ouverte automatiquement après validation du
